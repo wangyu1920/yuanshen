@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingEnd="15dp"
+    android:paddingStart="15dp"
+    android:paddingBottom="20dp"
+    android:paddingTop="10dp"
+    tools:context=".SimpleActivity"
+    tools:ignore="RtlSymmetry,ScrollViewCount">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/应用介绍及注意事项" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/Role_Attack_White"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="攻击白值"
+                android:inputType="number" />
+            <EditText
+                android:id="@+id/Role_Attack_Green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="攻击绿值"
+                android:inputType="number" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/Role_CriticalRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="暴击率" />
+            <EditText
+                android:id="@+id/Role_CriticalDamage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="暴击伤害" />
+
+        </LinearLayout>
+        <EditText
+            android:id="@+id/Role_ElementMaster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="精通"
+            android:inputType="number" />
+        <EditText
+            android:id="@+id/Role_ElementDamage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="元素伤害加成" />
+        <EditText
+            android:id="@+id/Role_AttackRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="攻击倍率" />
+        <EditText
+            android:id="@+id/Role_DamageAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="额外伤害加成，例如乐团，莫娜" />
+        <EditText
+            android:id="@+id/Role_ED_Down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="抗性降低,如钟离" />
+        <EditText
+            android:id="@+id/Role_ReactionRateAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="反应倍率提升，如4魔女" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/Role_Level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="角色等级" />
+            <EditText
+                android:id="@+id/EnemyLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="怪物等级" />
+
+        </LinearLayout>
+        <EditText
+            android:id="@+id/ReactRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="触发元素反应的基础倍率，100表示不反应" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Calculate"
+                android:text="计算" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/showDamage" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/showDamageGrowth" />
+    </LinearLayout>
+
+</ScrollView>
